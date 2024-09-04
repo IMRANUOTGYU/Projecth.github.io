@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="Index.css">
+    <script>
+        function pick (val)
+        {
+            document.getElementById("screen"). value +=val;
+        }
+         function solve ()
+        {
+            var X =document.getElementById("screen"). value;
+           var Y=eval(X); document.getElementById("screen"). value=Y;
+           }
+           function clr()
+           {
+document.getElementById("screen").
+value=""; 
+          }
+           </script>
+</head>
+<body>
+    
+    <h1><center><b>CALCULATOR</b></center></h1>
+    <input type=""id="screen"><br><br>
+    <input type="button"value="("onclick="pick('(')">
+    <input type="button"value=")"onclick="pick(')')">
+    <input type="button"value="%"onclick="pick('%')">
+    <input type="button"value="AC"id="Ac"onclick="clr()">
+    <br>
+    <input type="button"value="7"onclick="pick('7')">
+      <input type="button"value="8"onclick="pick('8')">
+    <input type="button"value="9"onclick="pick('9')">
+    <input type="button"value="="id="cal"onclick="solve()"><br>
+    <input type="button"value="4"onclick="pick('4')">
+    <input type="button"value="5"onclick="pick('5')">
+    <input type="button"value="6"onclick="pick('6')">
+    <input type="button"value="*"onclick="pick('*')">
+    <br>
+    <input type="button"value="1"onclick="pick('1')">
+    <input type="button"value="2"onclick="pick('2')">
+    <input type="button"value="3"onclick="pick('3')">
+      <input type="button"value="-"onclick="pick('-')">
+    <br>
+    <input type="button"value="0"onclick="pick('0')">
+    <input type="button"value="."onclick="pick('.')">
+    <input type="button"value="÷"onclick="pick('÷')">
+    <input type="button"value="+"onclick="pick('+')"><br>
+    
+  </body>
+</html>
